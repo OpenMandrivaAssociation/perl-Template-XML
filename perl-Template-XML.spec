@@ -2,10 +2,8 @@
 %define name	perl-%{module}
 %define	modprefix Template
 
-%define version 2.16
-
-%define	rel	1
-%define release %mkrel %{rel}
+%define version 2.17
+%define release %mkrel 1
 
 %define _provides_exceptions perl(XML::
 
