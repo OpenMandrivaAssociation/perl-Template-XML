@@ -26,7 +26,6 @@ BuildRequires:	perl(XML::RSS) >= 0.9
 BuildRequires:	perl(XML::Simple) >= 2
 BuildRequires:	perl(XML::XPath) >= 1
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 The Template-XML distribution provides a number of Template Toolkit
