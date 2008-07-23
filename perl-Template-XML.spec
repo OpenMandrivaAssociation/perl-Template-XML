@@ -3,7 +3,7 @@
 %define	modprefix Template
 
 %define version 2.17
-%define release %mkrel 1
+%define release %mkrel 3
 
 %define _provides_exceptions perl(XML::
 
