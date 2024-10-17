@@ -14,7 +14,7 @@ Release:	4
 Summary:	XML plugin for the Template Toolkit
 License:	Artistic/GPL
 Group:		Development/Perl
-URL:		http://www.template-toolkit.org
+URL:		https://www.template-toolkit.org
 Source0:	http://www.cpan.org/modules/by-module/Template/%{upstream_name}-%{upstream_version}.tar.bz2
 
 BuildRequires:	perl-devel
