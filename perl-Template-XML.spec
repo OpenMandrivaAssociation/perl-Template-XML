@@ -8,14 +8,14 @@
 %endif
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 
 Summary:	XML plugin for the Template Toolkit
 License:	Artistic/GPL
 Group:		Development/Perl
 URL:		https://www.template-toolkit.org
-Source0:	http://www.cpan.org/modules/by-module/Template/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	https://cpan.metacpan.org/authors/id/A/AB/ABW/Template-XML-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
