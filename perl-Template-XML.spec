@@ -1,6 +1,4 @@
 %define upstream_name    Template-XML
-%define upstream_version 2.17
-
 %if %{_use_internal_dependency_generator}
 %define __noautoprov 'perl\\(XML::(.*)\\)'
 %else
@@ -8,14 +6,14 @@
 %endif
 
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	2.17
+Release:	6
 
 Summary:	XML plugin for the Template Toolkit
 License:	Artistic/GPL
 Group:		Development/Perl
 URL:		https://www.template-toolkit.org
-Source0:	https://cpan.metacpan.org/authors/id/A/AB/ABW/Template-XML-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/A/AB/ABW/Template-XML-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -39,7 +37,7 @@ version of this Template::Plugin::XML front-end module was added.
 
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -60,9 +58,7 @@ make test
 %changelog
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 2.170.0-1mdv2010.0
 + Revision: 406383
-- rebuild using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 2.17-3mdv2009.0
+- rebuild using %2.17 Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 2.17-3mdv2009.0
 + Revision: 241957
 - rebuild
 - kill re-definition of %%buildroot on Pixel's request
